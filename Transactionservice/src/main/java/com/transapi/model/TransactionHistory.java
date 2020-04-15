@@ -2,29 +2,19 @@ package com.transapi.model;
 
 import java.util.Date;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name="transaction")
 public class TransactionHistory {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private long transid;
 	
-	@Column(name="fromaccount")
 	private long fromaccount;
 	
-	@Column(name="toaccount")
 	private long toaccount;
 	
-	@Column(name="fmobilenumber")
 	private long frmmobilenumber;
 	
-	@Column(name="tomobilenumber")
 	private long tomobilenumber;
 	
-	@Column(name="description")
 	private String comment;
 
 	private Date transdate;
