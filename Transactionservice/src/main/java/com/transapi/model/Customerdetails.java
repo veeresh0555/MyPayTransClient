@@ -10,14 +10,8 @@ import java.util.List;
 public class Customerdetails {
 
 	private long cid;
-	
-
 	private String cname;
-	
-	
 	private String mobileno;
-	
-	
 	private List<BankAccounts> baccounts;
 
 	public long getCid() {

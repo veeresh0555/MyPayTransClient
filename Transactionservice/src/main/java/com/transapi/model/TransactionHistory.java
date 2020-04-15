@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class TransactionHistory {
 
-	
 	private long transid;
 	
 	private long fromaccount;

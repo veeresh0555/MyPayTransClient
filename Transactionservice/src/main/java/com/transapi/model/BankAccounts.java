@@ -1,6 +1,7 @@
 package com.transapi.model;
 
 public class BankAccounts {
+	
 	private Long acno;
 	private Customerdetails customer;
 	private Double balance;
