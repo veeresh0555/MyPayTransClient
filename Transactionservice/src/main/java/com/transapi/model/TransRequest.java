@@ -4,9 +4,7 @@ public class TransRequest {
 
 	private long transid;
 	private long fromaccount;
-	
 	private long toaccount;
-	
 	private long frmmobilenumber;
 	
 	private long tomobilenumber;

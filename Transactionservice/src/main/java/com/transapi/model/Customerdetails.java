@@ -13,7 +13,6 @@ public class Customerdetails {
 	private String cname;
 	private String mobileno;
 	private List<BankAccounts> baccounts;
-
 	public long getCid() {
 		return cid;
 	}
