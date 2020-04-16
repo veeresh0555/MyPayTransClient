@@ -14,6 +14,9 @@ import com.transapi.model.TransactionHistory;
 @FeignClient(name="http://mypaytransaction/mypaytrans")
 public interface MyPayTransClient {
 	
+	@GetMapping("/inf")
+	public String info();
+	
 	@PostMapping("/savetrans")
 	public ResponseEntity<TransactionHistory> savetrans(TransRequest transreq);
 	

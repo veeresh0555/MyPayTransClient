@@ -32,7 +32,7 @@ public class TransactionController {
  	
 	@GetMapping
 	public String info() {
-		String port=env.getProperty("server.local.port");
+		String port=env.getProperty("local.server.port");
 		return "Transactional Service Running on "+port;
 	}
 	
@@ -40,6 +40,12 @@ public class TransactionController {
 	public ResponseEntity<List<Customerdetails>> getAllAccounts() {
 		return transclient.getAllAccounts();
 	}
+	
+	@GetMapping("/inf")
+	public String inf() {
+		return myapptransclient.info();
+	}
+	
 	
 	@PostMapping("/savetrans")//transfer amount
 	public ResponseEntity<TransactionHistory> savetrans(TransRequest transreq){

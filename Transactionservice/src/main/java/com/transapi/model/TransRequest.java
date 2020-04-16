@@ -3,16 +3,10 @@ package com.transapi.model;
 public class TransRequest {
 
 	private long transid;
-	private long fromaccount;
-	private long toaccount;
 	private long frmmobilenumber;
-	
 	private long tomobilenumber;
-	
 	private Double amount;
-	
 	private String transdate;
-	
 	private String comment;
 	
 	public String getComment() {
@@ -49,22 +43,7 @@ public class TransRequest {
 		this.amount = amount;
 	}
 
-	public long getFromaccount() {
-		return fromaccount;
-	}
-
-	public void setFromaccount(long fromaccount) {
-		this.fromaccount = fromaccount;
-	}
-
-	public long getToaccount() {
-		return toaccount;
-	}
-
-	public void setToaccount(long toaccount) {
-		this.toaccount = toaccount;
-	}
-
+	
 	public long getFrmmobilenumber() {
 		return frmmobilenumber;
 	}
